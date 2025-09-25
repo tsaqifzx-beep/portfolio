@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lighting & Rendering — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      background: linear-gradient(135deg, #0a2239, #1a1c2c, #2d1b3d);
+      color: #fff;
+      line-height: 1.7;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      color: #ffd166;
+    }
+    header p {
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    h2 {
+      color: #60f6d2;
+      margin-bottom: 15px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+    }
+    .back-btn {
+      display: inline-block;
+      margin: 30px auto;
+      padding: 12px 20px;
+      border-radius: 25px;
+      background: linear-gradient(90deg,#60f6d2,#ff6ec7);
+      color: #111;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+      transition: 0.3s;
+    }
+    .back-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: .9rem;
+      background: rgba(0,0,0,0.4);
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lighting & Rendering</h1>
+    <p>Creating realistic moods, environments, and cinematic visuals with lighting and rendering techniques.</p>
+  </header>
+
+  <section>
+    <h2>What is Lighting & Rendering?</h2>
+    <p>
+      Lighting & Rendering are essential stages in 3D animation and visual design. 
+      <strong>Lighting</strong> brings mood, depth, and atmosphere to a scene, while 
+      <strong>Rendering</strong> converts 3D models into final 2D images or animations.  
+      Together, they transform raw models into stunning visuals that feel alive and immersive.
+    </p>
+  </section>
+
+  <section>
+    <h2>Capabilities</h2>
+    <ul>
+      <li>Realistic lighting setups (day, night, studio, cinematic)</li>
+      <li>Material and texture adjustments for lifelike results</li>
+      <li>Advanced rendering using ray tracing & global illumination</li>
+      <li>Creating dramatic shadows and highlights for storytelling</li>
+      <li>Rendering for games, movies, and animation projects</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>My Showcase</h2>
+    <div class="gallery">
+      <img src="img/MasterAngle.jpg" alt="Lighting Scene 1">
+      <img src="img/Additional angle 2.jpg" alt="Lighting Scene 2">
+      <img src="images/render1.jpg" alt="Rendered Scene 1">
+      <img src="images/render2.jpg" alt="Rendered Scene 2">
+    </div>
+  </section>
+
+  <div style="text-align:center;">
+    <a href="Main.html" class="back-btn">← Back to Portfolio</a>
+  </div>
+
+  <footer>
+    © <span id="year"></span> Tsaqif Muzhaffar — Lighting & Rendering Portfolio
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>After Effects — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      background: linear-gradient(135deg, #0a2239, #1a1c2c, #2d1b3d);
+      color: #fff;
+      line-height: 1.7;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      color: #ffd166;
+    }
+    header p {
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    h2 {
+      color: #60f6d2;
+      margin-bottom: 15px;
+    }
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      margin-top: 25px;
+    }
+    video {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+    }
+    .back-btn {
+      display: inline-block;
+      margin: 30px auto;
+      padding: 12px 20px;
+      border-radius: 25px;
+      background: linear-gradient(90deg,#60f6d2,#ff6ec7);
+      color: #111;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+      transition: 0.3s;
+    }
+    .back-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: .9rem;
+      background: rgba(0,0,0,0.4);
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>After Effects Projects</h1>
+    <p>Motion graphics, VFX, and compositing using Adobe After Effects.</p>
+  </header>
+
+  <section>
+    <h2>What is Adobe After Effects?</h2>
+    <p>
+      Adobe After Effects is an industry-standard tool for motion graphics and visual effects.  
+      It is used to create animations, compositing, title sequences, special effects, and 
+      professional video edits for films, advertisements, and online content.
+    </p>
+  </section>
+
+  <section>
+    <h2>My Showcase</h2>
+    <div class="video-grid">
+      <!-- Replace with your own MP4 files -->
+      <video controls>
+        <source src="video/Tsaqif_Muzhaffar_242DM2426U_CUTOUT_Animation.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <video controls>
+        <source src="video/Tsaqif_Muzhaffar_242DM2426U_Wall_Texture (1).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <video controls>
+        <source src="video/Tsaqif_Muzhaffar_Bin_Azrulsani_242DM2426U_Neon.light.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+   
+      </video>
+    </div>
+  </section>
+
+  <div style="text-align:center;">
+    <a href="Main.html" class="back-btn">← Back to Portfolio</a>
+  </div>
+
+  <footer>
+    © <span id="year"></span> Tsaqif Muzhaffar — After Effects Portfolio
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
